@@ -13,13 +13,13 @@ As the Locator-S1 does not carry its own depth sensor, the depth needs to be pro
 
 ## LED Signals
 
+* No green light: Power is off and the unit is **not ready** for diving.
+
 * Flashing green light (fast): Searching for GPS lock. The unit is **not ready** to dive.
 
 * Fixed green light: GPS lock is acheived. The unit is ready to dive.
 
 * Flashing green light (slow): GPS lock has been acheived but lost. The unit is ready to dive.
-
-* No green light: Power is off and the unit is not ready for diving.
 
 ## Benefits
 

@@ -40,7 +40,7 @@ The on-board GPS module is used to position the system in a global reference sys
 
 ### GPS-antenna assembly
 
-The GPS-antenna can be mounted anywhere you want, but remember the GPS-antenna is the origin of the master electronics position. Therefor it is recommended to fasten the antenna on the lid of the pelican case. With the 3M double sided tape, attach the GPS- antenna to the lid of the pelican case.
+The GPS-antenna can be mounted anywhere you want, but remember the GPS-antenna is the origin of the master electronics position. Therefor it is recommended to fasten the antenna on the lid of the peli case. With the 3M double sided tape, attach the GPS- antenna to the lid of the peli case.
 
 ![gps_antenna_placement](../img/gps_antenna_placement.jpg)
 
@@ -56,4 +56,4 @@ The master electronics has an built in IMU used to provide the orientation of th
 
 For the IMU to work properly it needs to be calibrated. The calibration data is stored when full calibration is obtained for faster calibration on restart of the system. If the system is started on a new location a new calibration is needed for the IMU to work as intended.
 
-To calibrate the IMU disconnect all Recivers and Locator cables, but leave power and Ethernet connected. This is to prevent damaging the cables and connector when performing the calibration. While looking at the top bar in the web GUI on the IMU status bar move the pelican case in a figure of 8 until all the bars are green.
+To calibrate the IMU disconnect all Recivers and Locator cables, but leave power and Ethernet connected. This is to prevent damaging the cables and connector when performing the calibration. While looking at the top bar in the web GUI on the IMU status, move the peli case in a figure of 8 until all the bars are green.
