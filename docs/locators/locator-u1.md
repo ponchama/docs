@@ -1,8 +1,5 @@
 # Locator-U1
 
-!!! warning
-    This is a draft only
-
 ## Description
 
 The Locator-U1 is a battery powered, digital hydro acoustic locator device. It carries an internal GPS based time sync module, which means no tether is required. This Locator fits well for divers, ROVs where power is not easily accessible, or other underwater applications.
