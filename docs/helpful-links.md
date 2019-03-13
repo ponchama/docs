@@ -13,3 +13,19 @@ API: [demo.waterlinked.com/swagger](http://demo.waterlinked.com/swagger)
 API examples: [waterlinked/examples](http://github.com/waterlinked/examples)
 
 Youtube: [waterlinked/youtube](https://www.youtube.com/channel/UCZFmOcapjyWgEnS_l6JgxQg)
+
+## Datasheets
+
+[Underwater Explorer Kit](https://www.waterlinked.com/datasheets/underwater-gps-explorer-kit/)
+
+[Locator-U1](https://www.waterlinked.com/datasheets/locator-u1/)
+
+[Locator-S1](https://www.waterlinked.com/datasheets/locator-s1/)
+
+[Locator-D1](https://www.waterlinked.com/datasheets/locator-d1/)
+
+[Locator-A1](https://www.waterlinked.com/datasheets/locator-a1/)
+
+[Receiver-D1](https://www.waterlinked.com/datasheets/receiver-d1/)
+
+[Master-D1](https://www.waterlinked.com/datasheets/master-d1/)

@@ -21,3 +21,5 @@ The tables below shows the pinning of the Receiver interface connectors.
 ## Dimensions
 
 ![receiver_dimensions](img/receiver_dimensions.png)
+
+[Datasheet](https://www.waterlinked.com/datasheets/receiver-d1/)

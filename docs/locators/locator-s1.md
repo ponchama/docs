@@ -53,3 +53,5 @@ The Locator-S1 has a simple UART interface which is used to change the channel o
 ## Dimensions
 
 ![s1_dimensions](../img/s1_dimensions.png)
+
+[Datasheet](https://www.waterlinked.com/datasheets/locator-s1/)

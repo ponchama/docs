@@ -38,3 +38,6 @@ This document is created using markdown and is hosted on GitHub. If you find som
 ## Discussion
 
 If you have more questions which is not answered on this page please go to our [forum](https://waterlinked.com/forums/forum/underwater-gps/) where we will be happy to answer you.
+
+
+[Datasheet](https://www.waterlinked.com/datasheets/underwater-gps-explorer-kit/)

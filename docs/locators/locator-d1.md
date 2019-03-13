@@ -23,3 +23,5 @@ The tables below shows the pinning of the D1 interface connectors.
 ## Dimensions
 
 ![d1_dimensions](../img/d1_dimensions.png)
+
+[Datasheet](https://www.waterlinked.com/datasheets/locator-d1/)

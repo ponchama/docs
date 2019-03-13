@@ -21,3 +21,5 @@ The tables below shows the pinning of the A1 interface connectors.
 ## Dimensions
 
 ![a1_dimensions](../img/a1_dimensions.png)
+
+[Datasheet](https://www.waterlinked.com/datasheets/locator-a1/)

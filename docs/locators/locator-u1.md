@@ -46,3 +46,5 @@ Because the U1 is battery powered the only interface for it is the charing port 
 ## Dimensions
 
 ![u1_dimensions](../img/u1_dimensions.png)
+
+[Datasheet](https://www.waterlinked.com/datasheets/locator-u1/)
