@@ -4,13 +4,9 @@
 
 The Locator-D1 carries its own depth sensor and can therefore operate fully stand-alone and independent of the device you want to position.
 
-## Benefits
+!!! warning
+    The Locator-D1 can only be submerged for about 6 hours. It then needs to dry the pressure sensor in order to give correct depth readings.
 
-* Extremely small footprint enabling easy integration in other equipment.
-
-* No requirements to integrate depth and power from external systems.
-
-* Highly robust operation in areas with reflections (shallow water, around installations etc.)
 
 ## Wiring interface
 

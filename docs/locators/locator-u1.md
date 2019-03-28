@@ -22,13 +22,8 @@ The Locator has 3 mounting holes on each side for M3 screws. A default bracket i
 
 * Pulsating green light : The Locator-U1 is charging. The unit is **not ready** to dive.
 
-## Benefits
-
-* Battery powered operation removes all cable requirements enabling easy operation.
-
-* Extremely small size making it perfect for on-body applications like diving or retrofitting on ROV.
-
-* Highly robust operation in areas with reflections (shallow water, around installations etc.)
+!!! warning
+    The Locator-U1 can only be submerged for about 6 hours. It then needs to dry the pressure sensor in order to give correct depth readings.
 
 ## Wiring interface
 
