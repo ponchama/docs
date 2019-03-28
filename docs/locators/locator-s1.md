@@ -21,13 +21,6 @@ As the Locator-S1 does not carry its own depth sensor, the depth needs to be pro
 
 * Flashing green light (slow): GPS lock has been acheived but lost. The unit is ready to dive.
 
-## Benefits
-
-* GPS based sync removes all tether requirements enabling very easy integration with any ROV.
-
-* Extremely small size making it perfect for even the smallest underwater vehicles.
-
-* Highly robust operation in areas with reflections (shallow water, around installations etc.)
 
 ## Wiring interface
 
