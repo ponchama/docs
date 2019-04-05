@@ -14,14 +14,14 @@ A software update package (.wlup file) includes all files required to update the
 | Step | Description          |                      |
 | -    | :------------------- | :------------------- |
 | 1    | Power off the system |  |
-| 2    | Set Master-D1 to DHCP Server IP “192.168.2.94” | See [network settings](../hardware.md) |
-| 2    | Connect a network cable from your computer to the Master-D1 | |
-| 3    | Configure the IP on your own computer to be on the same sub-net  | (for example 192.168.2.100) |
+| 2    | Set Master-D1 to DHCP Server. (Remember original setting) | See [network settings](../hardware.md) |
+| 2    | Connect a network cable directly from your computer to the Master-D1 | |
+| 3    | Configure the network on your computer to get IP address from DHCP  | (unless you have changed it, this is default on most computers) |
 | 4    | Power up the system while at the same time keeping the GPIO0 pin on the GPIO connector grounded with the upgrade plug included with the kit | ![upgrade_plug](../../img/upgrade_plug.jpg) |
-| 5    | Go to web GUI [http://192.168.2.94](http://192.168.2.94) | If you see a blank or partly broken page, try to clean browser cache by pressing Ctrl-F5 or opening the page in "Private"/"Incognito" mode |
-| 6    | After the system has booted and you see the upgrader GUI, remove the grounding of GP0. |  |
+| 5    | Go to web GUI [http://192.168.0.1](http://192.168.0.1) | If you see a blank or partly broken page, try to clean browser cache by pressing Ctrl-F5 or opening the page in "Private"/"Incognito" mode |
+| 6    | Remove the grounding of GP0. |  |
 | 7    | Click “Browse file” and select correct <>.wlup file |  |
 | 8    | Wait for update process to complete |  |
 | 9    | When the update process is complete and successful, the system will automatically reboot to standard mode |  |
-| 10   | Verify that the SW version has updated by going to the web gui [http://192.168.2.94](http://192.168.2.94) | If you see a blank or partly broken page, try to clean browser cache by pressing Ctrl-F5 or opening the page in "Private"/"Incognito" mode |
-|   |   |   |
+| 10   | Verify that the SW version has updated by going to the web gui [http://192.168.0.1](http://192.168.0.1) | If you see a blank or partly broken page, try to clean browser cache by pressing Ctrl-F5 or opening the page in "Private"/"Incognito" mode |
+| 11   | Reset network settings to original setting from step 2 | See [network settings](../hardware.md) |
