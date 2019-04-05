@@ -27,7 +27,7 @@ markdown_extensions:
 extra_css:
     - css/extra.css
 
-pages:
+nav:
     - Explorer Kit:
         - Introduction: explorer-kit/introduction.md
         - Warnings: explorer-kit/warnings.md
@@ -63,4 +63,4 @@ pages:
     - Tutorials: tutorials.md
     - Helpful Links: helpful-links.md
 
-copyright: © Water Linked 2018
+copyright: © Water Linked 2018-2019

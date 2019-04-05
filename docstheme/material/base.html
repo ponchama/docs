@@ -48,9 +48,9 @@
       {% endif %}
     {% endblock %}
     {% block styles %}
-      <link rel="stylesheet" href="{{ base_url }}/assets/stylesheets/application.ba0fd1a6.css">
+      <link rel="stylesheet" href="{{ base_url }}/assets/stylesheets/application.aebec49b.css">
       {% if palette.primary or palette.accent %}
-        <link rel="stylesheet" href="{{ base_url }}/assets/stylesheets/application-palette.6079476c.css">
+        <link rel="stylesheet" href="{{ base_url }}/assets/stylesheets/application-palette.964228eb.css">
       {% endif %}
       {% if palette.primary %}
         {% import "partials/palette.html" as map %}
@@ -61,7 +61,7 @@
       {% endif %}
     {% endblock %}
     {% block libs %}
-      <script src="{{ base_url }}/assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="{{ base_url }}/assets/javascripts/modernizr.28ce4e3b.js"></script>
     {% endblock %}
     {% block fonts %}
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -177,7 +177,7 @@
       {% endblock %}
     </div>
     {% block scripts %}
-      <script src="{{ base_url }}/assets/javascripts/application.40c19b3b.js"></script>
+      <script src="{{ base_url }}/assets/javascripts/application.d3876493.js"></script>
       {% if lang.t("search.language") != "en" %}
         {% set languages = lang.t("search.language").split(",") %}
         {% if languages | length and languages[0] != "" %}
@@ -188,7 +188,7 @@
               {% if language == "jp" %}
                 <script src="{{ path }}/tinyseg.js"></script>
               {% endif %}
-              {% if language in ("da", "de", "du", "es", "fi", "fr", "hu", "it", "jp", "no", "pt", "ro", "ru", "sv", "tr") %}
+              {% if language in ("da", "de", "du", "es", "fi", "fr", "hu", "it", "ja", "jp", "nl", "no", "pt", "ro", "ru", "sv", "th", "tr") %}
                 <script src="{{ path }}/lunr.{{ language }}.js"></script>
               {% endif %}
             {% endif %}
