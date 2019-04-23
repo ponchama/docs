@@ -41,15 +41,7 @@ nav:
             - Upgrader: explorer-kit/gui/upgrader.md
             - API: explorer-kit/gui/api.md
         - Quickstart: explorer-kit/quickstart.md
-
-    # - Developer Bundle:
-    #     - Introduction: developer-bundle/introduction.md
-    #     - Warnings: developer-bundle/warnings.md
-    #     - General: developer-bundle/general.md
-    #     - Hardware Setup: developer-bundle/hardware-setup.md
-    #     - Software: developer-bundle/software.md
-    #     - Spesifications: developer-bundle/spesifications.md
-    #     - Diagnostics: developer-bundle/diagnostics.md
+        - Trouble shooting: explorer-kit/trouble-shooting.md
 
     - Locators:
         - Introduction: locators/introduction.md
