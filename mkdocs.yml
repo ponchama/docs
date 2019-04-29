@@ -52,6 +52,9 @@ nav:
 
     - Receiver-D1: receiver-d1.md
     - Master-D1: master-d1.md
+    - Modem-M64:
+        - Introduction: modems/modem-m64.md
+        - Protocol: modems/modem-m64-protocol.md
     - Tutorials: tutorials.md
     - Helpful Links: helpful-links.md
 
