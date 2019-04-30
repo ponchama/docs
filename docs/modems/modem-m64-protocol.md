@@ -66,7 +66,7 @@ On top side modem (using role A):
 | Wf      | WAf      | Flush transmit buffer (optional) |
 | Ws008HelloSea | WAs  | Send packet |
 |         |          | Wait for response |
-|  | Ws008HelloTop   | Got response  |
+|  | WP008HelloTop   | Got response  |
 
 
 On AUV/ROV modem (using role B):
