@@ -6,10 +6,10 @@ At power-up, the Master-D1 reads the DIP-switch settings. The network mode depen
 
 | GP0                 | GP1                  | Network mode         | DHCP client example mode |
 | ------------------- | :------------------- | :------------------- | :------------------- |
-| ON                  | ON                   | DHCP client          |  ![ip_settings](../img/ip_settings.png)   |
-| OFF                 | ON                   | Static IP 192.168.2.94 |                      |
-| ON                  | OFF                  | Static IP 10.11.12.94 |                      |
-| OFF                 | OFF                  | DHCP Server, 192.168.0.1 |                      |
+| ON                  | ON                   | DHCP client          | ![](../img/DHCP_client.png) |
+| OFF                 | ON                   | Static IP 192.168.2.94 | ![](../img/static_192.png) |
+| ON                  | OFF                  | Static custom IP | ![](../img/static_custom.png) |
+| OFF                 | OFF                  | DHCP Server, 192.168.0.1 | ![](../img/DHCP_server.png) |
 |   |   |   |   |
 
 The BS0 and BS1 positions on the dip switch shall both be ON. These boot-select pins are used in factory programming only.
@@ -18,7 +18,7 @@ Use the supplied Ethernet cable to connect the Underwater GPS to a network switc
 
 !!! note
     The host computer connected to the topside unit needs to have an IP-address on the same subnet as set on the Master-D1.
-    For example: If the IP address of the UGPS is 10.11.12.94 the host computer needs to be configured to a different 10.11.12.x address e.g. 10.11.12.100.
+    For example: If the IP address of the UGPS is 192.168.2.94 the host computer needs to be configured to a different 192.168.2.x address e.g. 192.168.2.100.
 
 ## Connectors
 
