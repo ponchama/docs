@@ -32,6 +32,7 @@ nav:
         - Introduction: explorer-kit/introduction.md
         - Warnings: explorer-kit/warnings.md
         - Power supply: explorer-kit/power-supply.md
+        - Network settings: explorer-kit/network-settings.md
         - Hardware: explorer-kit/hardware.md
         - GUI:
             - Position: explorer-kit/gui/position.md
