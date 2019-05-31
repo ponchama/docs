@@ -1,4 +1,4 @@
-## Modem-M64 serial protocol [DRAFT5]
+## Modem-M64 serial protocol [DRAFT6]
 
 This document describes the Water Linked Underwater Modem Link Layer protocol.
 
@@ -6,6 +6,8 @@ This document describes the Water Linked Underwater Modem Link Layer protocol.
 
 * Modem - Unit for transmitting/receiving data
 * Packet - Unit of data transmitted together
+* ACK - Acknowledgement. The command issued was successful.
+* NAK - Negative acknowledgement. The command issued failed.
 
 ## Version
 
@@ -20,9 +22,9 @@ The protocol versioning follows semantic versioning in that:
 
 The serial communication format is 112500 8-N-1 (no hardware flow control).
 
-Packets sent to and received from the modem starts with 'W' and end with CR+LF.
+Packets sent to and received from the modem starts with 'W' and end with LF or CR+LF.
 The commands can be sent as a string or entered one char at a time from a terminal.
-If the delay between bytes is more than ~3 seconds the packet will time out and a malformed request (W?) will be returned.
+If the delay between bytes is more than ~2 seconds the packet will time out and a malformed request (W?) will be returned.
 
 The protocol can support Water Linked modems with different payload sizes and other features.
 To support any Water Linked modem the connection procedure is to:
@@ -32,7 +34,11 @@ To support any Water Linked modem the connection procedure is to:
 
 For Water Linked Modem-M64 the payload size is 8 bytes.
 
-In order for two modems to communicate they must be configured to use different roles (A/B).
+In order for two modems to communicate they must be configured to use different roles (A/B) on the same channel.
+The modem with role A will always transmit data packets.
+The modem will role B will listen until it detects a packet from a modem of role A.
+It will then start transmitting responses back to the modem with role A.
+The modem with role B will go back to listen mode if several consecutive packets from the modem with role A cannot be decoded (ie signal is lost).
 
 
 ## Commands
@@ -41,15 +47,15 @@ In order for two modems to communicate they must be configured to use different 
 | Command | Description | Response | Description |
 |---------|-----------|-----------|-----------|
 | Wv | Get protocol version | WV1.0 | Protocol version (major.minor)  |
-| Wq | Get payload size | WQnnn | Where nnn is payload size: eg: WQ008 |
-| Wa | Get modem settings | WCrc | Where r=role A/B and c=channel 0-7 eg: WCA0 |
-| Wcxy | Set modem settings - Where x=role A/B and y=channel 0-7: eg: WcB7 | WCxy | Confirmed current settings eg: WCB7 |
-| Wsnnnd...d | Send packet - Where nnn is number of bytes and d...d is payload eg: Ws008HelloSea | WAs / WNs | ACK/NAK |
+| Wq | Get payload size | WQn | Where n is payload size: eg: WQ8 |
+| Wa | Get modem settings | WCr,c | Where r=role A/B and c=channel 0-7 eg: WCA,0 |
+| Wcx,y | Set modem settings - Where x=role A/B and y=channel 0-7: eg: WcB,7 | WCx,y | Confirmed current settings eg: WCB,7 |
+| Wsn,d...d | Send packet - Where n is number of bytes and d...d is payload eg: Ws8,HelloSea | WAs / WNs | Payload can be binary. Response: ACK/NAK |
 | Wf | Flush tx buf  | WAf / WNf | ACK/NAK |
 | Wl | Get tx buf len | WLnnnnn eg: WL107 | Current packets in buffer. |
 | Wd | Status / diagnostic  | WD(link_status up/down),(packet_count),(packet_loss_count),(bit_error_rate in percent)| WDU,1234,17,3.5|
 |  | Response when command cannot be understood | W? | Malformed request |
-|  | Got a packet | WPnnnd...d | Got packet where nnn is number of bytes and d...d is payload eg: WP008HelloSea |
+|  | Got a packet | WPn,d...d | Got packet where n is number of bytes and d...d is payload eg: WP8,Welcome! |
 
 
 ## Examples
