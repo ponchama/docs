@@ -67,12 +67,12 @@ On top side modem (using role A):
 | Command | Response | Description |
 |---------|----------|-------------|
 | Wv      | WV1.0    | Get protocol version |
-| Wq      | WQ008    | Get payload size |
-| WcA1    | WCA1     | Set role A and channel 1 |
+| Wq      | WQ8      | Get payload size |
+| WcA,1   | WCA,1    | Set role A and channel 1 |
 | Wf      | WAf      | Flush transmit buffer (optional) |
-| Ws008HelloSea | WAs  | Send packet |
+| Ws8,HelloSea | WAs | Send packet |
 |         |          | Wait for response |
-|  | WP008HelloTop   | Got response  |
+|  | WP8,HelloTop    | Got response  |
 
 
 On AUV/ROV modem (using role B):
@@ -80,8 +80,8 @@ On AUV/ROV modem (using role B):
 | Command | Response | Description |
 |---------|----------|-------------|
 | Wv      | WV1.0    | Get protocol version |
-| Wq      | WQ008    | Get payload size |
-| WcB1    | WCB1     | Set role B and channel 1 |
+| Wq      | WQ8      | Get payload size |
+| WcB,1   | WCB,1    | Set role B and channel 1 |
 |         |          | Wait for response |
-|         | WP008HelloSea | Got packet |
-| Ws008HelloTop  | WAs | Send response back  |
+|         | WP8,HelloSea | Got packet |
+| Ws8,HelloTop | WAs | Send response back  |
