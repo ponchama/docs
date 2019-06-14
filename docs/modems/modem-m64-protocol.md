@@ -1,4 +1,4 @@
-## Modem-M64 serial protocol [DRAFT6]
+## Modem-M64 serial protocol
 
 This document describes the Water Linked Underwater Modem Link Layer protocol.
 
@@ -11,7 +11,7 @@ This document describes the Water Linked Underwater Modem Link Layer protocol.
 
 ## Version
 
-This document describes protocol version 1.0 (major.minor)
+This document describes protocol version 1,0 (major,minor)
 
 The protocol versioning follows semantic versioning in that:
 
@@ -22,15 +22,20 @@ The protocol versioning follows semantic versioning in that:
 
 The serial communication format is 112500 8-N-1 (no hardware flow control).
 
-Packets sent to and received from the modem starts with 'W' and end with LF or CR+LF.
-The commands can be sent as a string or entered one char at a time from a terminal.
-If the delay between bytes is more than ~2 seconds the packet will time out and a malformed request (W?) will be returned.
+Packets sent to and received from the modem start with a `w` and end with end with LF or CR+LF. The packet format is:
 
-The protocol can support Water Linked modems with different payload sizes and other features.
+| Start byte | Direction        | Command  | Options (0 to many)  | End byte       |
+|------------|------------------|----------|----------------------|----------------|
+| `w`        | `c` or `r`       | `x`      | `,[option]`          | `\n` or `\r\n` |
+
+The commands can be sent as a string or entered one char at a time from a terminal.
+If the delay between bytes is more than ~2 seconds the packet will time out and a malformed request (`w?`) will be returned.
+
+The protocol can support Water Linked modems with different payload sizes and extended features.
 To support any Water Linked modem the connection procedure is to:
 
 - Get protocol version. Verify that the major version number is 1.
-- Get payload size. Use this size when sending packets to the modem.
+- Get payload size. Use this size when queuing packets for transmission the modem.
 
 For Water Linked Modem-M64 the payload size is 8 bytes.
 
@@ -43,19 +48,20 @@ The modem with role B will go back to listen mode if several consecutive packets
 
 ## Commands
 
-
 | Command | Description | Response | Description |
-|---------|-----------|-----------|-----------|
-| Wv | Get protocol version | WV1.0 | Protocol version (major.minor)  |
-| Wq | Get payload size | WQn | Where n is payload size: eg: WQ8 |
-| Wa | Get modem settings | WCr,c | Where r=role A/B and c=channel 0-7 eg: WCA,0 |
-| Wcx,y | Set modem settings - Where x=role A/B and y=channel 0-7: eg: WcB,7 | WCx,y | Confirmed current settings eg: WCB,7 |
-| Wsn,d...d | Send packet - Where n is number of bytes and d...d is payload eg: Ws8,HelloSea | WAs / WNs | Payload can be binary. Response: ACK/NAK |
-| Wf | Flush tx buf  | WAf / WNf | ACK/NAK |
-| Wl | Get tx buf len | WLnnnnn eg: WL107 | Current packets in buffer. |
-| Wd | Status / diagnostic  | WD(link_status up/down),(packet_count),(packet_loss_count),(bit_error_rate in percent)| WDU,1234,17,3.5|
-|  | Response when command cannot be understood | W? | Malformed request |
-|  | Got a packet | WPn,d...d | Got packet where n is number of bytes and d...d is payload eg: WP8,Welcome! |
+|---------|-------------|----------|-------------|
+| `wcv`   | Get protocol version | `wrv,`*[major],[minor]* | Protocol version. eg: `wrv,1,0` |
+| `wcn`   | Get payload size | `wrn,`*[size]* | Where size is supported payload size: eg: `wrn,8` |
+| `wcc`   | Get modem configuration | `wrc,`*[role],[channel]* | Where role=a or b and channel=1-7 eg: `wrc,a,4` |
+| `wcc,`*[role],[channel]* | Set modem configuration - Where role=a or b and ch=channel 1-7: eg: `wrc,b,4` | `wrc,`*[role],[channel]* | Confirmed current config eg: `wrc,b,4` |
+| `wcf`   | Flush transmit queue  | `wrf,a` or `wrf,n` | ACK or NAK |
+| `wcl`   | Get transmit queue length | `wrl,`*[q]* | Number of packets currently queued for transmission. eg: `wrl,107` |
+| `wcd`   | Get diagnostic  | `wrd,`*[link],[packet_count],[packet_loss_count],[bit_error_rate]* | link=y if connection with other modem, otherwise n.  eg: `wrd,y,1234,17,3.5`|
+|         |             |          |              |
+| `wcq,`*[size],[payload]* | Queue packet for transmission. Payload can be binary. eg: `wcq,8,HelloSea` | `wrq,a` or `wrq,n` | ACK or NAK |
+| `wcq,`*[size],[payload]*`*`[crc8] | Queue packet for transmission. With CRC8 | `wrq,a` or `wrq,n` | ACK or NAK |
+|         |             | `wrp,`*[size],[payload]* | Got packet from other modem eg: `wrp,8,Welcome!` |
+|         |             | `wr?` | Malformed request: Response when command cannot be understood |
 
 
 ## Examples
@@ -64,24 +70,23 @@ Here is an example of setting up two modems and sending packets between them.
 
 On top side modem (using role A):
 
-| Command | Response | Description |
-|---------|----------|-------------|
-| Wv      | WV1.0    | Get protocol version |
-| Wq      | WQ8      | Get payload size |
-| WcA,1   | WCA,1    | Set role A and channel 1 |
-| Wf      | WAf      | Flush transmit buffer (optional) |
-| Ws8,HelloSea | WAs | Send packet |
-|         |          | Wait for response |
-|  | WP8,HelloTop    | Got response  |
-
+| Command          | Response         | Description |
+|------------------|------------------|-------------|
+| `wcv`            | `wrv,1,0`        | Get protocol version |
+| `wcn`            | `wrn,8`          | Get payload size |
+| `wcc,a,4`        | `wrc,a,4`        | Set role A and channel 4 |
+| `wcf`            | `wrf,a`          | Flush transmit buffer (optional) |
+| `wcq,8,HelloSea` | `wrq,a`          | Send packet |
+|                  |                  | Wait for response |
+|                  | `wrp,8,HelloTop` | Got response  |
 
 On AUV/ROV modem (using role B):
 
-| Command | Response | Description |
-|---------|----------|-------------|
-| Wv      | WV1.0    | Get protocol version |
-| Wq      | WQ8      | Get payload size |
-| WcB,1   | WCB,1    | Set role B and channel 1 |
-|         |          | Wait for response |
-|         | WP8,HelloSea | Got packet |
-| Ws8,HelloTop | WAs | Send response back  |
+| Command         | Response         | Description |
+|-----------------|------------------|-------------|
+| `wcv`           | `wrv,1,0`        | Get protocol version |
+| `wcn`           | `wrn,8`          | Get payload size |
+| `wcc,b,4`       | `wrc,a,4`        | Set role B and channel 4 |
+|                 |                  | Wait for response |
+|                 | `wrp,8,HelloSea` | Got packet |
+| `wcq8,HelloTop` | `wrq,a`          | Send response back  |
