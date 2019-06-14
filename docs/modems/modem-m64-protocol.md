@@ -53,13 +53,12 @@ The modem with role B will go back to listen mode if several consecutive packets
 | `wcv`   | Get protocol version | `wrv,`*[major],[minor]* | Protocol version. eg: `wrv,1,0` |
 | `wcn`   | Get payload size | `wrn,`*[size]* | Where size is supported payload size: eg: `wrn,8` |
 | `wcc`   | Get modem configuration | `wrc,`*[role],[channel]* | Where role=a or b and channel=1-7 eg: `wrc,a,4` |
-| `wcc,`*[role],[channel]* | Set modem configuration - Where role=a or b and ch=channel 1-7: eg: `wrc,b,4` | `wrc,`*[role],[channel]* | Confirmed current config eg: `wrc,b,4` |
-| `wcf`   | Flush transmit queue  | `wrf,a` or `wrf,n` | ACK or NAK |
+| `wcs,`*[role],[channel]* | Set modem configuration - Where role=a or b and channel 1-7: eg: `wrs,b,4` | `wrs,a` or `wrs,n` | ACK or NAK |
 | `wcl`   | Get transmit queue length | `wrl,`*[q]* | Number of packets currently queued for transmission. eg: `wrl,107` |
+| `wcf`   | Flush transmit queue  | `wrf,a` or `wrf,n` | ACK or NAK |
 | `wcd`   | Get diagnostic  | `wrd,`*[link],[packet_count],[packet_loss_count],[bit_error_rate]* | link=y if connection with other modem, otherwise n.  eg: `wrd,y,1234,17,3.5`|
 |         |             |          |              |
 | `wcq,`*[size],[payload]* | Queue packet for transmission. Payload can be binary. eg: `wcq,8,HelloSea` | `wrq,a` or `wrq,n` | ACK or NAK |
-| `wcq,`*[size],[payload]*`*`[crc8] | Queue packet for transmission. With CRC8 | `wrq,a` or `wrq,n` | ACK or NAK |
 |         |             | `wrp,`*[size],[payload]* | Got packet from other modem eg: `wrp,8,Welcome!` |
 |         |             | `wr?` | Malformed request: Response when command cannot be understood |
 
@@ -82,11 +81,11 @@ On top side modem (using role A):
 
 On AUV/ROV modem (using role B):
 
-| Command         | Response         | Description |
-|-----------------|------------------|-------------|
-| `wcv`           | `wrv,1,0`        | Get protocol version |
-| `wcn`           | `wrn,8`          | Get payload size |
-| `wcc,b,4`       | `wrc,a,4`        | Set role B and channel 4 |
-|                 |                  | Wait for response |
-|                 | `wrp,8,HelloSea` | Got packet |
-| `wcq8,HelloTop` | `wrq,a`          | Send response back  |
+| Command          | Response         | Description |
+|------------------|------------------|-------------|
+| `wcv`            | `wrv,1,0`        | Get protocol version |
+| `wcn`            | `wrn,8`          | Get payload size |
+| `wcc,b,4`        | `wrc,b,4`        | Set role B and channel 4 |
+|                  |                  | Wait for response |
+|                  | `wrp,8,HelloSea` | Got packet |
+| `wcq,8,HelloTop` | `wrq,a`          | Send response back  |
