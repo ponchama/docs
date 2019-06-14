@@ -28,8 +28,8 @@ Packets sent to and received from the modem start with a `w` and end with end wi
 |------------|------------------|----------|----------------------|----------------|
 | `w`        | `c` or `r`       | `x`      | `,[option]`          | `\n` or `\r\n` |
 
+Direction is command (`c`) for commands issued to the modem and the modem replies with direction set to response (`r`).
 The commands can be sent as a string or entered one char at a time from a terminal.
-If the delay between bytes is more than ~2 seconds the packet will time out and a malformed request (`w?`) will be returned.
 
 The protocol can support Water Linked modems with different payload sizes and extended features.
 To support any Water Linked modem the connection procedure is to:
