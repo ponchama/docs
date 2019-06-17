@@ -73,8 +73,7 @@ On top side modem (using role A):
 |------------------|------------------|-------------|
 | `wcv`            | `wrv,1,0`        | Get protocol version |
 | `wcn`            | `wrn,8`          | Get payload size |
-| `wcc,a,4`        | `wrc,a,4`        | Set role A and channel 4 |
-| `wcf`            | `wrf,a`          | Flush transmit buffer (optional) |
+| `wcs,a,4`        | `wrs,a`          | Set role A and channel 4 |
 | `wcq,8,HelloSea` | `wrq,a`          | Send packet |
 |                  |                  | Wait for response |
 |                  | `wrp,8,HelloTop` | Got response  |
@@ -85,7 +84,7 @@ On AUV/ROV modem (using role B):
 |------------------|------------------|-------------|
 | `wcv`            | `wrv,1,0`        | Get protocol version |
 | `wcn`            | `wrn,8`          | Get payload size |
-| `wcc,b,4`        | `wrc,b,4`        | Set role B and channel 4 |
+| `wcs,b,4`        | `wrs,a`          | Set role B and channel 4 |
 |                  |                  | Wait for response |
 |                  | `wrp,8,HelloSea` | Got packet |
 | `wcq,8,HelloTop` | `wrq,a`          | Send response back  |
