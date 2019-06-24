@@ -19,4 +19,25 @@ The M64 sets a new market standard with its record-breaking physical size, low p
 
 ## Wiring interface
 
+The tables below shows the pinning of the S1 interface.
+
+| Interface           | Color |
+| :------------------ | :-- |
+| Positive (10-18V) | Orange  |
+| Negative/Ground | Orange/White   |
+| UART RX | Brown  |
+| UART TX | Brown/White   |
+
+## Terminal Interface
+
+The Modem-M64 has a simple 3.3 volt UART interface which is used to change the channel of the locator.
+
+| Settings           | Value |
+| :------------------ | :-- |
+| Baud rate | 115200  |
+| Data parity stop | 8N1   |
+| Flow control | None  |
+
 ## Dimensions
+
+![modem_m64_dimensions](../img/modem_m64_dimensions.png)
