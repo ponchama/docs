@@ -21,7 +21,7 @@ The protocol versioning follows semantic versioning in that:
 
 ## Overview
 
-The serial communication format is 112500 8-N-1 (no hardware flow control).
+The serial communication format is 115200 8-N-1 (no hardware flow control).
 
 Packets sent to and received from the modem start with a `w` and end with end with LF or CR+LF. The packet format is:
 
