@@ -38,6 +38,12 @@ The Modem-M64 has a simple 3.3 volt UART interface which is used to change the c
 | Data parity stop | 8N1   |
 | Flow control | None  |
 
+## Libraries and code examples
+
+Example code and libraries that can be used to communicate with the modem on the terminal interface:
+
+* [Python](https://github.com/waterlinked/modem-python)
+
 ## Dimensions
 
 ![modem_m64_dimensions](../img/modem_m64_dimensions.png)
