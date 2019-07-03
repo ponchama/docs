@@ -19,7 +19,7 @@ The M64 sets a new market standard with its record-breaking physical size, low p
 
 ## Wiring interface
 
-The tables below shows the pinning of the S1 interface.
+The tables below shows the pinning of the Modem-M64 interface.
 
 | Interface           | Color |
 | :------------------ | :-- |
