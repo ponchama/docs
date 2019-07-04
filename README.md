@@ -1,4 +1,4 @@
-# W-DN-17002 User Maunals
+# W-DN-17002 User Manuals
 
 We are using mkdocs to manage our documentation.
 
