@@ -10,7 +10,7 @@ In this section you choose which locator you are using with the system and on wh
     If you are using the Locator-A1 or S1, you need to provid depth information to the topside unit. Description on how to do this is found [here](https://waterlinked.github.io/docs/explorer-kit/gui/api/).
 
 
-## Global reference system
+## Top-side Setup
 
 In this section you have the option to choose which GPS and IMU source you are going to use. We strongly advise to use static or external GPS when operation allow for it. Because the master-D1 electronics has a standard GPS receiver it has a standard deviation of around 2-3 meters. 
 
