@@ -16,6 +16,14 @@ The M64 sets a new market standard with its record-breaking physical size, low p
 
 * 200 meter range
 
+## LED Signals
+
+* No green light: Power is off.
+
+* Flashing green light (slow): Modem is trying to pair with another modem.
+
+* Fixed green light: Modem has sync with another modem. The LED will blink each time it receives a packet from the other modem.
+
 
 ## Wiring interface
 
