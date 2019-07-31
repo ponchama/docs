@@ -28,4 +28,4 @@ mkdocs serve
 
 ## Deploy changes to server
 
-After the changes have been completed run the command "mkdocs gh-deploy". This updates the gh-pages branch which is the one github pages reads the documentation from.
+After the changes have been tested and they work, push the changes to the master branch and Travis will do the rest of the job for you!
