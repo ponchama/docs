@@ -32,3 +32,4 @@ If you are experiencing issues with the Underwater GPS look at the following poi
 
 * Is there signal from all of the receivers?
 * Is there a significant peek in the signal for each receiver?
+* Is there noise from an nearby echo sounder which is causing acoustic interference? Such an interference can be seen in the diagnostic view. See [diagnostic explanation](gui/diagnostic.md) for more details.
