@@ -12,7 +12,7 @@ The M64 sets a new market standard with its record-breaking physical size, low p
 
 * 64 bit per second net data link, both ways
 
-* Typical latency ~500ms
+* Latency 1.5 – 2.5 sec
 
 * 200 meter range
 
