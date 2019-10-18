@@ -60,8 +60,8 @@ Commands in the table are shown **without** the checksum for readability.
 |---------|-------------|----------|-------------|
 | `wcv`   | Get protocol version | `wrv,`*[major],[minor],[patch]* | Protocol version. eg: `wrv,1,0,1` |
 | `wcn`   | Get supported payload size | `wrn,`*[size]* | Where size is supported payload size: eg: `wrn,8` |
-| `wcc`   | Get modem configuration | `wrc,`*[role],[channel]* | Where role=a or b and channel=1-7 eg: `wrc,a,4` |
-| `wcs,`*[role],[channel]* | Set modem configuration - Where role=a or b and channel 1-7: eg: `wrs,b,4` | `wrs,a` or `wrs,n` | ACK or NAK |
+| `wcc`   | Get modem configuration | `wrc,`*[role],[channel]* | Where role=a or b and channel=1-7 eg: `wrc,a,3` |
+| `wcs,`*[role],[channel]* | Set modem configuration - Where role=a or b and channel 1-7: eg: `wrs,b,3` | `wrs,a` or `wrs,n` | ACK or NAK |
 | `wcl`   | Get transmit queue length | `wrl,`*[q]* | Number of packets currently queued for transmission. eg: `wrl,107` |
 | `wcf`   | Flush transmit queue  | `wrf,a` or `wrf,n` | ACK or NAK |
 | `wcd`   | Get diagnostic | `wrd,`*[link],[packet_count],[packet_loss_count],[bit_error_rate]* | link=y if connection with other modem, otherwise n.  eg: `wrd,y,1234,17,3.5` *[1]*|
@@ -86,7 +86,7 @@ On top side modem (using role A):
 |------------------|---------------------|-------------|
 | `wcv`            | `wrv,1,0,1*44`      | Get protocol version |
 | `wcn`            | `wrn,8*ba`          | Get payload size |
-| `wcs,a,4`        | `wrs,a*01`          | Set role A and channel 4 |
+| `wcs,a,3`        | `wrs,a*01`          | Set role A and channel 3 |
 | `wcq,8,HelloSea` | `wrq,a*d7`          | Send packet |
 |                  |                     | Wait packet from other modem |
 |                  | `wrp,8,HelloTop*bb` | Got response  |
@@ -97,7 +97,7 @@ On AUV/ROV modem (using role B):
 |------------------|---------------------|-------------|
 | `wcv`            | `wrv,1,0,1*44`      | Get protocol version |
 | `wcn`            | `wrn,8*ba`          | Get payload size |
-| `wcs,b,4`        | `wrs,a*01`          | Set role B and channel 4 |
+| `wcs,b,3`        | `wrs,a*01`          | Set role B and channel 3 |
 |                  |                     | Wait packet from other modem |
 |                  | `wrp,8,HelloSea*58` | Got packet |
 | `wcq,8,HelloTop` | `wrq,a*d7`          | Send response back  |
