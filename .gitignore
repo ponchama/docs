@@ -1,2 +1,6 @@
 site/
 venv/
+
+# PDF generated markdown
+*.pdf
+

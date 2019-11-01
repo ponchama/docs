@@ -53,9 +53,12 @@ nav:
 
     - Receiver-D1: receiver-d1.md
     - Master-D1: master-d1.md
-    - Modem-M64:
-        - Introduction: modems/modem-m64.md
+    - Modems:
+        - Modem-M64: modems/modem-m64.md
         - Protocol: modems/modem-m64-protocol.md
+    - DVLs:
+        - DVL-A50: dvl/dvl-a50.md
+        - Protocol: dvl/dvl-protocol.md
     - Channel overview: channels.md
     - Tutorials: tutorials.md
     - Helpful Links: helpful-links.md
