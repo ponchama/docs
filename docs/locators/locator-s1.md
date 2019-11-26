@@ -9,7 +9,7 @@ Some Locator-S1 attributes can be configured using an integrated UART (3V3) inte
 !!! note
     The default channel for Locator-S1 is 17 on boot.
 
-As the Locator-S1 does not carry its own depth sensor, the depth needs to be provided from the underwater vehicle (ROV etc.) to the topside Master-D1 using the software API. Example of how to perform this can be found [here](https://waterlinked.github.io/docs/explorer-kit/gui/api/).
+As the Locator-S1 does not carry its own depth sensor, the depth needs to be provided from the underwater vehicle (ROV etc.) to the topside Master-D1 using the software API. Example of how to perform this can be found [here](../explorer-kit/gui/api.md#providing-depth-to-system-when-using-locator-a1s1).
 
 ## LED Signals
 

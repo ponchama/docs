@@ -23,7 +23,7 @@ Once the position is known relative to the Receivers, the global position can be
 
 ## Quickstart
 
-[Getting started with Waterlinked Underwater GPS](https://waterlinked.github.io/docs/explorer-kit/quickstart/)
+[Getting started with Waterlinked Underwater GPS](quickstart.md)
 
 ## User Manual
 

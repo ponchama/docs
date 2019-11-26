@@ -17,7 +17,7 @@ Start by connecting power to the topside unit. We do this first because we want 
 
 ## Calibrate IMU
 
-Connect the Ethernet cable to the topside unit and your computer. Then open your web browser and type in the IP-address of your topside unit which is defined by the position of the dip-switch on the Master-D1. How to change the IP-address is described [here](https://waterlinked.github.io/docs/explorer-kit/hardware/). At the top bar on the GUI you will see a calibration bar for the IMU. To calibrate the IMU rotate it in a figure of 8 and keep doing it until the IMU calibration bar becomes full and green.
+Connect the Ethernet cable to the topside unit and your computer. Then open your web browser and type in the IP-address of your topside unit which is defined by the position of the dip-switch on the Master-D1. How to change the IP-address is described [here](network-settings.md). At the top bar on the GUI you will see a calibration bar for the IMU. To calibrate the IMU rotate it in a figure of 8 and keep doing it until the IMU calibration bar becomes full and green.
 
 ## Deploying of receivers
 
@@ -41,7 +41,7 @@ Now that everything is connected and ready it is time to select the right locato
 After selecting the correct locator, you need to provide the correct placement of the receivers to the GUI for the positioning to work correctly. This is done by drag'n drop of each receiver to the correct placment relative to the topside unit. The position of each receiver is seen below in the map view. It you click on the receiver you get a pop up with the possibility to write its exact placment. Once this is done you can limit the search range by using the same drag and drop feature.
 
 !!! warning
-    If you are using the Locator-A1 or S1, you need to provide depth information to the topside unit. Description on how to do this is found [here](https://waterlinked.github.io/docs/explorer-kit/gui/api/).
+    If you are using the Locator-A1 or S1, you need to provide depth information to the topside unit. Description on how to do this is found [here](gui/api.md#providing-depth-to-system-when-using-locator-a1s1).
 
 !!! tip
     Reducing the search range helps to improve the performance of the system. It is recomended to limith this range if you are operating in a smaller area. This is especially important in tanks.
