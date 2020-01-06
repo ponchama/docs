@@ -1,6 +1,6 @@
 # W-DN-17002 User Manuals
 
-[![Build Status](https://travis-ci.org/waterlinked/docs.svg?branch=master)](https://travis-ci.org/waterlinked/docs)
+[![Build Status](https://github.com/waterlinked/docs/workflows/Deploy%20Water%20Linked%20Docs/badge.svg)](https://github.com/waterlinked/docs/actions)
 
 We are using mkdocs to manage our documentation.
 
