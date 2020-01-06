@@ -1,0 +1,1094 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://waterlinked.github.io/modems/modem-m64-protocol/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../img/favicon_water_linked.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Protocol - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#modem-m64-serial-protocol" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://waterlinked.github.io" title="Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../img/waterlinked_logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Protocol
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/waterlinked/docs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://waterlinked.github.io" title="Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../img/waterlinked_logo.png" width="48" height="48">
+      
+    </a>
+    Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/waterlinked/docs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Explorer Kit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Explorer Kit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../explorer-kit/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../explorer-kit/warnings/" title="Warnings" class="md-nav__link">
+      Warnings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../explorer-kit/power-supply/" title="Power supply" class="md-nav__link">
+      Power supply
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../explorer-kit/network-settings/" title="Network settings" class="md-nav__link">
+      Network settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../explorer-kit/hardware/" title="Hardware" class="md-nav__link">
+      Hardware
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-6" type="checkbox" id="nav-1-6">
+    
+    <label class="md-nav__link" for="nav-1-6">
+      GUI
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-6">
+        GUI
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../explorer-kit/gui/position/" title="Position" class="md-nav__link">
+      Position
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../explorer-kit/gui/receivers/" title="Receivers" class="md-nav__link">
+      Receivers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../explorer-kit/gui/settings/" title="Settings" class="md-nav__link">
+      Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../explorer-kit/gui/diagnostic/" title="Diagnostic" class="md-nav__link">
+      Diagnostic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../explorer-kit/gui/upgrader/" title="Upgrader" class="md-nav__link">
+      Upgrader
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../explorer-kit/gui/api/" title="API" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../explorer-kit/quickstart/" title="Quickstart" class="md-nav__link">
+      Quickstart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../explorer-kit/trouble-shooting/" title="Trouble shooting" class="md-nav__link">
+      Trouble shooting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Locators
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Locators
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../locators/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../locators/locator-a1/" title="Locator-A1" class="md-nav__link">
+      Locator-A1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../locators/locator-d1/" title="Locator-D1" class="md-nav__link">
+      Locator-D1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../locators/locator-s1/" title="Locator-S1" class="md-nav__link">
+      Locator-S1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../locators/locator-u1/" title="Locator-U1" class="md-nav__link">
+      Locator-U1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../receiver-d1/" title="Receiver-D1" class="md-nav__link">
+      Receiver-D1
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../master-d1/" title="Master-D1" class="md-nav__link">
+      Master-D1
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Modem-M64
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Modem-M64
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../modem-m64/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Protocol
+      </label>
+    
+    <a href="./" title="Protocol" class="md-nav__link md-nav__link--active">
+      Protocol
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modem-m64-serial-protocol" class="md-nav__link">
+    Modem-M64 serial protocol
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminology" class="md-nav__link">
+    Terminology
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version" class="md-nav__link">
+    Version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../channels/" title="Channel overview" class="md-nav__link">
+      Channel overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/" title="Tutorials" class="md-nav__link">
+      Tutorials
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../helpful-links/" title="Helpful Links" class="md-nav__link">
+      Helpful Links
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modem-m64-serial-protocol" class="md-nav__link">
+    Modem-M64 serial protocol
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminology" class="md-nav__link">
+    Terminology
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version" class="md-nav__link">
+    Version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/waterlinked/docs/edit/master/docs/modems/modem-m64-protocol.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Protocol</h1>
+                
+                <h2 id="modem-m64-serial-protocol">Modem-M64 serial protocol</h2>
+<p>This document describes the Water Linked Underwater Modem Link Layer protocol.</p>
+<h2 id="terminology">Terminology</h2>
+<ul>
+<li>Modem - Unit for transmitting/receiving data</li>
+<li>Packet - Unit of data transmitted together</li>
+<li>ACK - Acknowledgement. The command issued was successful.</li>
+<li>NAK - Negative acknowledgement. The command issued failed.</li>
+</ul>
+<h2 id="version">Version</h2>
+<p>This document describes protocol/software version 1,0,x (major,minor,patch)</p>
+<p>The protocol versioning follows semantic versioning in that:</p>
+<ul>
+<li>MAJOR version increments represents incompatible API changes,</li>
+<li>MINOR version increments represents added functionality in a backwards-compatible manner</li>
+<li>PATCH version increments represents backwards-compatible bug fixes</li>
+</ul>
+<h2 id="overview">Overview</h2>
+<p>The serial communication format is 115200 8-N-1 (no hardware flow control).</p>
+<p>Packets sent to and received from the modem start with a <code>w</code> and end with end with LF or CR+LF. The packet format is:</p>
+<table>
+<thead>
+<tr>
+<th>Start byte</th>
+<th>Direction</th>
+<th>Command</th>
+<th>Options (0 to many)</th>
+<th>Checksum</th>
+<th>End byte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>w</code></td>
+<td><code>c</code> or <code>r</code></td>
+<td><code>x</code></td>
+<td><code>,[option]</code></td>
+<td><code>*xx</code></td>
+<td><code>\n</code> or <code>\r\n</code></td>
+</tr>
+</tbody>
+</table>
+<p>Direction is command (<code>c</code>) for commands issued to the modem and the modem replies with direction set to response (<code>r</code>).
+The commands can be sent as a string or entered one char at a time from a terminal.</p>
+<p>The protocol can support Water Linked modems with different payload sizes and extended features.
+To support any Water Linked modem the connection procedure is to:</p>
+<ul>
+<li>Get protocol version. Verify that the major version number is 1.</li>
+<li>Get payload size. Use this size when queuing packets for transmission the modem.</li>
+</ul>
+<p>For Water Linked Modem-M64 the payload size is 8 bytes.</p>
+<p>In order for two modems to communicate they must be configured to use different roles (A/B) on the same channel.
+The modem with role A will always transmit.
+The modem will role B will listen until it detects a signal from a modem of role A.
+It will then start transmitting responses back to the modem with role A.
+The modem with role B will go back to listen mode if several consecutive packets from the modem with role A cannot be decoded (ie signal is lost).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Payload where every byte is \0 is reserved. It is used to keep modems in sync if no data packet is queued by the user. This sync packet is filtered out by the receiver. Avoid this payload by compressing the data or otherwise ensuring atleast 1 bit is non-zero.</p>
+</div>
+<p>Checksum is optional when sending commands to the modem. The modem always returns a checksum. The checksum algorithm
+is CRC-8 and it is formatted as a hexadecimal number using 2 lower-case charaters (ex: <code>*c3</code>).</p>
+<h2 id="commands">Commands</h2>
+<p>Commands in the table are shown <strong>without</strong> the checksum for readability.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+<th>Response</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wcv</code></td>
+<td>Get protocol version</td>
+<td><code>wrv,</code><em>[major],[minor],[patch]</em></td>
+<td>Protocol version. eg: <code>wrv,1,0,1</code></td>
+</tr>
+<tr>
+<td><code>wcn</code></td>
+<td>Get supported payload size</td>
+<td><code>wrn,</code><em>[size]</em></td>
+<td>Where size is supported payload size: eg: <code>wrn,8</code></td>
+</tr>
+<tr>
+<td><code>wcc</code></td>
+<td>Get modem configuration</td>
+<td><code>wrc,</code><em>[role],[channel]</em></td>
+<td>Where role=a or b and channel=1-7 eg: <code>wrc,a,3</code></td>
+</tr>
+<tr>
+<td><code>wcs,</code><em>[role],[channel]</em></td>
+<td>Set modem configuration - Where role=a or b and channel 1-7: eg: <code>wrs,b,3</code></td>
+<td><code>wrs,a</code> or <code>wrs,n</code></td>
+<td>ACK or NAK</td>
+</tr>
+<tr>
+<td><code>wcl</code></td>
+<td>Get transmit queue length</td>
+<td><code>wrl,</code><em>[q]</em></td>
+<td>Number of packets currently queued for transmission. eg: <code>wrl,107</code></td>
+</tr>
+<tr>
+<td><code>wcf</code></td>
+<td>Flush transmit queue</td>
+<td><code>wrf,a</code> or <code>wrf,n</code></td>
+<td>ACK or NAK</td>
+</tr>
+<tr>
+<td><code>wcd</code></td>
+<td>Get diagnostic</td>
+<td><code>wrd,</code><em>[link],[packet_count],[packet_loss_count],[bit_error_rate]</em></td>
+<td>link=y if connection with other modem, otherwise n.  eg: <code>wrd,y,1234,17,3.5</code> <em>[1]</em></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>wcq,</code><em>[size],[payload]</em></td>
+<td>Queue packet for transmission. Number of characters in payload need to be exactly same as size. Payload can be binary. eg: <code>wcq,8,HelloSea</code> <em>[2]</em></td>
+<td><code>wrq,a</code> or <code>wrq,n</code></td>
+<td>ACK or NAK</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>wrp,</code><em>[size],[payload]</em></td>
+<td>Got packet from other modem eg: <code>wrp,8,Welcome!</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>wr?</code></td>
+<td>Malformed request: Response when packet cannot be understood</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>wr!</code></td>
+<td>Malformed request: Packet does not match the given checksum</td>
+</tr>
+</tbody>
+</table>
+<p><em>[1]</em> <code>packet_count</code> is the number of packets received. If a packet cannot be decoded the <code>packet_loss_count</code> increments regardless of the packet being queued data or a sync packet from the other modem.</p>
+<p><em>[2]</em> Payload with just zeros (<code>\0</code>) is reseved for keeping the modems in sync if no packet is queued. It will be filtered out by the receiving modem.</p>
+<h2 id="examples">Examples</h2>
+<p>Here is an example of setting up two modems and sending packets between them.</p>
+<p>On top side modem (using role A):</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Response</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wcv</code></td>
+<td><code>wrv,1,0,1*44</code></td>
+<td>Get protocol version</td>
+</tr>
+<tr>
+<td><code>wcn</code></td>
+<td><code>wrn,8*ba</code></td>
+<td>Get payload size</td>
+</tr>
+<tr>
+<td><code>wcs,a,3</code></td>
+<td><code>wrs,a*01</code></td>
+<td>Set role A and channel 3</td>
+</tr>
+<tr>
+<td><code>wcq,8,HelloSea</code></td>
+<td><code>wrq,a*d7</code></td>
+<td>Send packet</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Wait packet from other modem</td>
+</tr>
+<tr>
+<td></td>
+<td><code>wrp,8,HelloTop*bb</code></td>
+<td>Got response</td>
+</tr>
+</tbody>
+</table>
+<p>On AUV/ROV modem (using role B):</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Response</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wcv</code></td>
+<td><code>wrv,1,0,1*44</code></td>
+<td>Get protocol version</td>
+</tr>
+<tr>
+<td><code>wcn</code></td>
+<td><code>wrn,8*ba</code></td>
+<td>Get payload size</td>
+</tr>
+<tr>
+<td><code>wcs,b,3</code></td>
+<td><code>wrs,a*01</code></td>
+<td>Set role B and channel 3</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Wait packet from other modem</td>
+</tr>
+<tr>
+<td></td>
+<td><code>wrp,8,HelloSea*58</code></td>
+<td>Got packet</td>
+</tr>
+<tr>
+<td><code>wcq,8,HelloTop</code></td>
+<td><code>wrq,a*d7</code></td>
+<td>Send response back</td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../modem-m64/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../channels/" title="Channel overview" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Channel overview
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © Water Linked 2018-2019
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/waterlinked/" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://www.facebook.com/waterlinked/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/channel/UCZFmOcapjyWgEnS_l6JgxQg/" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

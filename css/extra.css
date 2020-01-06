@@ -1,0 +1,18 @@
+.md-header {
+    height:3.7rem;
+    background-color: #345a6a;
+}
+.md-flex{
+    margin-top: 1rem;
+}
+.md-header-nav .md-logo img{
+    margin-top: -1.8rem;
+    height:3.8rem;
+    width:auto;
+}
+.md-container{
+    margin-top: 2rem;
+}
+.md-sidebar{
+    margin-top:6rem;
+}
