@@ -18,11 +18,12 @@ jobs:
     - name: Install dependencies
       run: |
         python3 -m pip install --upgrade pip
-        pip install -r requirements.txt
+        python3 -m pip install -r requirements.txt
     - name: Build
       run: |
         mkdocs build --verbose --clean --strict
     - name: Deploy
+      uses: waterlinked/docs
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: gh-pages
