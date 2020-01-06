@@ -30,4 +30,4 @@ mkdocs serve
 
 ## Deploy changes to server
 
-After the changes have been tested and they work, push the changes to the master branch and Travis will do the rest of the job for you!
+After the changes have been tested and they work, push the changes to the master branch and Github will do the rest of the job for you!
