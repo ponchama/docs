@@ -23,7 +23,7 @@ jobs:
       run: |
         mkdocs build --verbose --clean --strict
     - name: Deploy
-      uses: waterlinked/docs
+      uses: waterlinked/docs@v1
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: gh-pages
