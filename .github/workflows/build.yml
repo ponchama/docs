@@ -1,6 +1,6 @@
 name: Deploy Water Linked Docs
 
-on: 
+on:
   push:
     branches:
     - master
@@ -23,5 +23,7 @@ jobs:
       run: |
         mkdocs build --verbose --clean --strict
     - name: Deploy
-      run: |
-        mkdocs gh-deploy
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./site
