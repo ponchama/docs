@@ -39,8 +39,8 @@ nav:
             - Receivers: explorer-kit/gui/receivers.md
             - Settings: explorer-kit/gui/settings.md
             - Diagnostic: explorer-kit/gui/diagnostic.md
-            - Upgrader: explorer-kit/gui/upgrader.md
             - API: explorer-kit/gui/api.md
+        - Software Update: explorer-kit/upgrader.md
         - Quickstart: explorer-kit/quickstart.md
         - Trouble shooting: explorer-kit/trouble-shooting.md
 
