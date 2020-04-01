@@ -38,7 +38,7 @@
     
     
       
-        <title>DVL-A50 - Documentation</title>
+        <title>Introduction - Documentation</title>
       
     
     
@@ -111,7 +111,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                DVL-A50
+                Introduction
               
             </span>
           
@@ -604,6 +604,27 @@
   
 
 
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1" checked>
+    
+    <label class="md-nav__link" for="nav-6-1">
+      DVL A50
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-1">
+        DVL A50
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
@@ -612,11 +633,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        DVL-A50
+        Introduction
       </label>
     
-    <a href="./" title="DVL-A50" class="md-nav__link md-nav__link--active">
-      DVL-A50
+    <a href="./" title="Introduction" class="md-nav__link md-nav__link--active">
+      Introduction
     </a>
     
       
@@ -665,6 +686,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ethernet-interface" class="md-nav__link">
+    Ethernet Interface
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#axis-convensions" class="md-nav__link">
     Axis convensions
   </a>
@@ -693,6 +721,23 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dvl-a50-details/" title="Details" class="md-nav__link">
+      Details
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -805,6 +850,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ethernet-interface" class="md-nav__link">
+    Ethernet Interface
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#axis-convensions" class="md-nav__link">
     Axis convensions
   </a>
@@ -857,9 +909,13 @@
 <li>2 m/s max velocity</li>
 <li>± 0.1 cm/s long term accuracy</li>
 <li>1000 meter depth rating</li>
-<li>10-30 V input voltage</li>
+<li>10-30 V input voltage (reversed-polarity protection)</li>
 <li>Ethernet and UART</li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We are using a constant speed of sound equal to 1500 m/s (Release 1.3.1). This will be user configurable in comming releases.</p>
+</div>
 <h2 id="led-signals">LED Signals</h2>
 <ul>
 <li>
@@ -917,7 +973,7 @@
 </tbody>
 </table>
 <h2 id="terminal-interface">Terminal Interface</h2>
-<p>The DVL-A50 has a 3.3 volt UART interface.</p>
+<p>The DVL-A50 has a 3.3 volt UART interface (5V tolerant).</p>
 <table>
 <thead>
 <tr>
@@ -940,6 +996,9 @@
 </tr>
 </tbody>
 </table>
+<p>Description of the <a href="../dvl-protocol/">serial protocol</a>.</p>
+<h2 id="ethernet-interface">Ethernet Interface</h2>
+<p>Description of the <a href="../dvl-a50-details/">ethernet services</a>.</p>
 <!--
 ## Libraries and code examples
 
@@ -959,6 +1018,7 @@ Example code and libraries that can be used to communicate with the DVL on the t
 <p><img alt="dvl_a50_dimensions" src="../../img/dvl_dimensions.png" /></p>
 <h2 id="mounting-holes">Mounting Holes</h2>
 <p><img alt="dvl_a50_mounting_holes_drawing" src="../../img/dvl_mounting_holes_drawing.png" /></p>
+<p><a href="https://www.waterlinked.com/datasheets/dvl-a50/">Datasheet</a></p>
                 
                   
                 
@@ -995,13 +1055,13 @@ Example code and libraries that can be used to communicate with the DVL on the t
           </a>
         
         
-          <a href="../dvl-protocol/" title="Protocol" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../dvl-a50-details/" title="Details" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Protocol
+                Details
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
