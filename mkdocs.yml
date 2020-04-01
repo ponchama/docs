@@ -57,7 +57,9 @@ nav:
         - Modem-M64: modems/modem-m64.md
         - Protocol: modems/modem-m64-protocol.md
     - DVLs:
-        - DVL-A50: dvl/dvl-a50.md
+        - DVL A50:
+          - Introduction: dvl/dvl-a50.md
+          - Details: dvl/dvl-a50-details.md
         - Protocol: dvl/dvl-protocol.md
     - Channel overview: channels.md
     - Tutorials: tutorials.md

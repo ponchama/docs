@@ -15,8 +15,11 @@ The DVL estimates velocity relative to the sea bottom by sending acoustic waves 
 * 2 m/s max velocity
 * ± 0.1 cm/s long term accuracy
 * 1000 meter depth rating
-* 10-30 V input voltage
+* 10-30 V input voltage (reversed-polarity protection)
 * Ethernet and UART
+
+!!! note
+    We are using a constant speed of sound equal to 1500 m/s (Release 1.3.1). This will be user configurable in comming releases.
 
 ## LED Signals
 
@@ -43,13 +46,20 @@ The tables below shows the pinning of the DVL-A50 interface.
 
 ## Terminal Interface
 
-The DVL-A50 has a 3.3 volt UART interface.
+The DVL-A50 has a 3.3 volt UART interface (5V tolerant).
 
 | Settings           | Value |
 | :------------------ | :-- |
 | Baud rate | 115200  |
 | Data parity stop | 8N1   |
 | Flow control | None  |
+
+
+Description of the [serial protocol](./dvl-protocol.md).
+
+## Ethernet Interface
+
+Description of the [ethernet services](./dvl-a50-details.md).
 
 <!--
 ## Libraries and code examples
@@ -75,3 +85,6 @@ The axis on the DVL-A50 are oriented North-East-Down (NED)
 ## Mounting Holes
 
 ![dvl_a50_mounting_holes_drawing](../img/dvl_mounting_holes_drawing.png)
+
+
+[Datasheet](https://www.waterlinked.com/datasheets/dvl-a50/)
