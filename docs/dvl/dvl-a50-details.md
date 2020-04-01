@@ -45,8 +45,8 @@ The DVL has the ability to be software upgraded. To upgrade the DVL go to [http:
 
 ### Fallback IP
 
-For convenience the DVL will always be available on the static IP address: **192.168.194.95**.
-To be able to connect to the DVL using the fallback IP address do the following steps:
+For convenience the DVL will always be available with the static IP address: **192.168.194.95**.
+To be able to connect to the DVL using the fallback IP address perform following steps:
 
 * Connect a ethernet cable directly from the DVL to your computer.
 * Set static IP our computer to be **192.168.194.90**
