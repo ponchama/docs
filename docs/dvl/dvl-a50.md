@@ -59,7 +59,7 @@ Description of the [serial protocol](./dvl-protocol.md).
 
 ## Ethernet Interface
 
-Description of the [ethernet services](./dvl-a50-details.md).
+Description of the [ethernet services](./dvl-a50-details.md#ethernet-interface).
 
 <!--
 ## Libraries and code examples
@@ -69,13 +69,6 @@ Example code and libraries that can be used to communicate with the DVL on the t
 * [Python](https://github.com/waterlinked/dvl-python)
  -->
 
-## Axis convensions
-
-The axis on the DVL-A50 are oriented North-East-Down (NED)
-
-* X axis is pointing forward (LED is forward, cable backward)
-* Y axis is pointing right
-* Z axis is pointing down (mounting holes are up, transducers are down)
 
 ## Dimensions
 
@@ -86,5 +79,11 @@ The axis on the DVL-A50 are oriented North-East-Down (NED)
 
 ![dvl_a50_mounting_holes_drawing](../img/dvl_mounting_holes_drawing.png)
 
+
+## Other details
+
+See [details](./dvl-a50-details.md) for description of axis conventions, transducer numbering and other details.
+
+## Datasheet
 
 [Datasheet](https://www.waterlinked.com/datasheets/dvl-a50/)

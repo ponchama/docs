@@ -1,5 +1,19 @@
 # DVL-A50 Interface details
 
+## Axis convensions
+
+The axis on the DVL-A50 are oriented North-East-Down (NED)
+
+* X axis is pointing forward (LED is forward, cable backward)
+* Y axis is pointing right
+* Z axis is pointing down (mounting holes are up, transducers are down)
+
+
+## Transducer numbering
+
+![dvl_a50_transducer_numbering](../img/dvl_transducer_numbering.jpg)
+
+
 ## Ethernet Interface
 
 The DVL has a few services available on ethernet:
