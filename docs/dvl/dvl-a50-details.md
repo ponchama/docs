@@ -1,4 +1,4 @@
-# DVL-A50 Interface details
+# DVL-A50 details
 
 ## Axis convensions
 
