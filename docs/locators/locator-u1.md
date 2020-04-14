@@ -4,11 +4,15 @@
 
 The Locator-U1 is a battery powered, digital hydro acoustic locator device. It carries an internal GPS based time sync module, which means no tether is required. This Locator fits well for divers, ROVs where power is not easily accessible, or other underwater applications.
 
-The internal battery is rechargeable using a USB-C charger. Before deployment in water, the Locator-U1 needs to achieve a GPS lock. The integrated status-LED shows the condition of the GPS lock. Once the Locator-U1 has lock it can operate for approximately 6 hours befor needing resync with GPS.
+The internal battery is rechargeable using the USB-C cable that follows and standard 5V USB charger. Before deployment in water, the Locator-U1 needs to achieve a GPS lock. The integrated status-LED shows the condition of the GPS lock. Once the Locator-U1 has lock it can operate for approximately 6 hours befor needing resync with GPS.
 
 The Locator-U1 has a rotary switch located on the inside of the cap. This switch is used to change the channel on which the Locator is transmitting. The same channel needs to be selected in the Water Linked Underwater GPS GUI.
 
 The Locator has 3 mounting holes on each side for M3 screws. A default bracket is included.
+
+## Power on/off
+
+To power **on** the Locator-U1 simply tighten the back lid until the LED on the U1 starts to blink indecating that the Locator is searching for GPS lock. The U1 is ready to use when the LED stops blinking and turns solid. To power **off** the Locator-U1 unscrew the back lid until the LED turns off.
 
 ## LED Signals
 
