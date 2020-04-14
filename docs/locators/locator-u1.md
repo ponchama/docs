@@ -10,9 +10,19 @@ The Locator-U1 has a rotary switch located on the inside of the cap. This switch
 
 The Locator has 3 mounting holes on each side for M3 screws. A default bracket is included.
 
-## Power on/off
+## Charging
 
-To power **on** the Locator-U1 simply tighten the back lid until the LED on the U1 starts to blink indecating that the Locator is searching for GPS lock. The U1 is ready to use when the LED stops blinking and turns solid. To power **off** the Locator-U1 unscrew the back lid until the LED turns off.
+Insert included USB-C cable into a wall adapter and connect it to the Locator-U1. The Locator LED will normally start pulsating while charging and turn solid green once charging has finished.
+*Note*: If battery voltage is too low, the pulsating will never start. The Locator will still charge regardless of the LED not showing the charge indication.
+
+Charging time is 7 hours.
+
+## Powering on/off
+
+To power **on** the Locator-U1 simply tighten the lid over the charging port. The the LED will start to blinking indicating that the Locator is searching for GPS lock. The Locator is ready to use when the LED stops blinking and turns solid.
+Before powering on, ensure the O-ring within the lid is without damage.
+
+To power **off** the Locator-U1 unscrew the back lid until the LED turns off.
 
 ## LED Signals
 
