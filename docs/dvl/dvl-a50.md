@@ -35,7 +35,7 @@ The tables below shows the pinning of the DVL-A50 interface.
 
 | Interface           | Color |
 | :------------------ | :-- |
-| Positive (10-18V) | Red  |
+| Positive (10-30V) | Red  |
 | Negative/Ground | Black   |
 | ETH TX+ | Orange/White   |
 | ETH TX- | Orange   |
