@@ -53,9 +53,27 @@ Once the IP configuration is modified the DVL needs to be rebooted for the setti
 
 The DVL supports sending measurements updates using the Transmission Control Protocol (TCP). A TCP server is available on port **16171** which outputs the latest measurements to all the connected clients. In the web GUI you can see the number of connected clients and the format of the output message. See [description of the output protocol](./dvl-protocol.md).
 
-### Software Upgrade
+### Software update
 
-The DVL has the ability to be software upgraded. To upgrade the DVL go to [http://waterlinked-dvl:9000](http://waterlinked-dvl:9000) or http://IP_ADDRESS:9000 and follow the instructions there.
+To get the best performance of the DVL it is recommended to always run the latest software. The update GUI can automatically check if a new software version is available.
+
+#### Automatic software update
+
+The easiest way of checking if a new version is available is to connect the DVL to the internet and let the upgrade GUI automatically check for a new version:
+
+* Connect the DVL ethernet to a network where the internet is available and make sure the DVL network configuration allows access to the internet.
+* Go to [http://waterlinked-dvl:9000](http://waterlinked-dvl:9000) or http://IP_ADDRESS:9000.
+* The upgrade GUI will automatically check if there is a new version available and allow installation of new upgrade with a single click.
+
+#### Offline software update
+
+If you are unable to connect the DVL to the internet, offline software update is available. The process is:
+
+* Find the current version and chipid in the the "about" section of the DVL web gui
+* Manually download an upgrade package (.wlup) from [the update server](https://update.waterlinked.com) using the chipid.
+* Verify if the version downloaded is newer than the currently running version
+* Go to [http://waterlinked-dvl:9000](http://waterlinked-dvl:9000) or http://IP_ADDRESS:9000.
+* Select "manual upload" and then upload the downloaded file.
 
 ### Fallback IP
 
