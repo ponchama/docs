@@ -16,6 +16,8 @@ Youtube: [waterlinked/youtube](https://www.youtube.com/channel/UCZFmOcapjyWgEnS_
 
 ## Datasheets
 
+[DVL A50](https://waterlinked.com/datasheets/dvl-a50/)
+
 [Modem M64](https://waterlinked.com/datasheets/modem-m64/)
 
 [Underwater Explorer Kit](https://www.waterlinked.com/datasheets/underwater-gps-explorer-kit/)
