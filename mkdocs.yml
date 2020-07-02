@@ -5,16 +5,16 @@ theme:
     name: material
     theme_dir: docstheme/material
     logo: img/waterlinked_logo.png
-    favicon: 'img/favicon_water_linked.ico'
+    favicon: img/favicon_water_linked.ico
     palette:
         accent: blue
 extra:
     social:
-      - type: github
+      - icon: fontawesome/brands/github
         link: https://github.com/waterlinked/
-      - type: facebook
+      - icon: fontawesome/brands/facebook
         link: https://www.facebook.com/waterlinked/
-      - type: youtube
+      - icon: fontawesome/brands/youtube
         link: https://www.youtube.com/channel/UCZFmOcapjyWgEnS_l6JgxQg/
 
 markdown_extensions:
@@ -28,6 +28,7 @@ extra_css:
     - css/extra.css
 
 nav:
+    - Home: index.md
     - Explorer Kit:
         - Introduction: explorer-kit/introduction.md
         - Warnings: explorer-kit/warnings.md
