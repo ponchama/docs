@@ -11,12 +11,15 @@ This is done by creating a pull request.
 
 1. Download, install dependencies
 
+Make sure you have Python3 installed.
+
 ```
 git clone --recursive https://github.com/waterlinked/docs
 cd docs
 
-virtualenv venv
-source ven/bin/activate
+python -m venv venv
+source ven/bin/activate (Linux)
+venv\Scripts\activate.bat (Windows)
 pip install -r requirements.txt
 
 mkdocs serve
