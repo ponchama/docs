@@ -14,6 +14,18 @@ The axis on the DVL-A50 are oriented North-East-Down (NED)
 ![dvl_a50_transducer_numbering](../img/dvl_transducer_numbering.jpg)
 
 
+## Transducer beam width
+
+![dvl_a50_transducer_beam](../img/dvl_transducer_directivity.svg)
+
+Half-power beam width is 4.4°
+
+
+## Line of sight
+
+![dvl_a50_transducer_line_of_sight](../img/dvl_line_of_sight.svg)
+
+
 ## Ethernet Interface
 
 The DVL has a few services available on ethernet:
