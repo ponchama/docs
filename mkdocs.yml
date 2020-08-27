@@ -62,6 +62,7 @@ nav:
           - Introduction: dvl/dvl-a50.md
           - Details: dvl/dvl-a50-details.md
         - Protocol: dvl/dvl-protocol.md
+        - IO Interface: dvl/io-interface.md
     - Channel overview: channels.md
     - Tutorials: tutorials.md
     - Helpful Links: helpful-links.md
