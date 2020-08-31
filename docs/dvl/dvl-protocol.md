@@ -10,13 +10,13 @@ This document describes the Water Linked DVL protocols (serial and ethernet).
 
 ## Version
 
-This document describes protocol version 2,0,x (major,minor,patch)
+This document describes protocol version 2.0.x (major.minor.patch)
 
 The protocol versioning follows semantic versioning in that:
 
-- MAJOR version increments represents incompatible API changes,
-- MINOR version increments represents added functionality in a backwards-compatible manner
-- PATCH version increments represents backwards-compatible bug fixes
+- MAJOR version increments represent incompatible API changes
+- MINOR version increments represent added functionality in a backwards-compatible manner
+- PATCH version increments represent backwards-compatible bug fixes
 
 ## Serial Protocol
 
@@ -33,7 +33,7 @@ Packets sent to and received from the DVL start with a `w` and end with end with
 Direction is command (`c`) for commands issued to the DVL and the DVL replies with direction set to response (`r`).
 The commands can be sent as a string or entered one char at a time from a terminal.
 
-The protocol can support Water Linked DVLs with different features sets.
+The protocol can support Water Linked DVLs with different feature sets.
 To support any Water Linked DVL the connection procedure is to:
 
 - Get protocol version. Verify that the major version number is 2.
