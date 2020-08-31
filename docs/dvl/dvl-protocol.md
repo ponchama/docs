@@ -24,7 +24,7 @@ The protocol versioning follows semantic versioning in that:
 
 The serial communication format is 115200 8-N-1 (no hardware flow control).
 
-Packets sent to and received from the DVL start with a `w` and end with end with LF or CR+LF. The packet format is:
+Packets sent to and received from the DVL start with a `w` and end with LF or CR+LF. The packet format is:
 
 | Start byte | Direction        | Command  | Options (0 to many)  | Checksum | End byte       |
 |------------|------------------|----------|----------------------|----------|----------------|
