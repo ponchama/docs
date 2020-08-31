@@ -46,7 +46,7 @@ The mDNS name used for the DVL is: `waterlinked-dvl`.
 
 ### Web GUI
 
-On operating systems supporting mDNS you can open the web GUI the following URL: [http://waterlinked-dvl](http://waterlinked-dvl).
+On operating systems supporting mDNS you can open the web GUI via the following URL: [http://waterlinked-dvl](http://waterlinked-dvl).
 If mDNS is not supported you need to obtain the IP address of the DVL and use that in your browser (http://IP_ADDRESS).
 
 The web GUI shows the status of the DVL (velocity and altitude) as well as diagnostic information.
@@ -93,5 +93,5 @@ For convenience the DVL will always be available with the static IP address: **1
 To be able to connect to the DVL using the fallback IP address perform following steps:
 
 * Connect a ethernet cable directly from the DVL to your computer.
-* Set static IP our computer to be **192.168.194.90**
-* Open web browser open [http://192.168.194.95](http://192.168.194.95)
+* Set static IP on your computer to be **192.168.194.90**
+* In a web browser open http://192.168.194.95
