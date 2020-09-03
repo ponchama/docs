@@ -969,17 +969,17 @@
 <li>NAK - Negative acknowledgement. The command issued failed.</li>
 </ul>
 <h2 id="version">Version</h2>
-<p>This document describes protocol version 2,0,x (major,minor,patch)</p>
+<p>This document describes protocol version 2.0.x (major.minor.patch)</p>
 <p>The protocol versioning follows semantic versioning in that:</p>
 <ul>
-<li>MAJOR version increments represents incompatible API changes,</li>
-<li>MINOR version increments represents added functionality in a backwards-compatible manner</li>
-<li>PATCH version increments represents backwards-compatible bug fixes</li>
+<li>MAJOR version increments represent incompatible API changes</li>
+<li>MINOR version increments represent added functionality in a backwards-compatible manner</li>
+<li>PATCH version increments represent backwards-compatible bug fixes</li>
 </ul>
 <h2 id="serial-protocol">Serial Protocol</h2>
 <h3 id="overview">Overview</h3>
 <p>The serial communication format is 115200 8-N-1 (no hardware flow control).</p>
-<p>Packets sent to and received from the DVL start with a <code>w</code> and end with end with LF or CR+LF. The packet format is:</p>
+<p>Packets sent to and received from the DVL start with a <code>w</code> and end with LF or CR+LF. The packet format is:</p>
 <table>
 <thead>
 <tr>
@@ -1004,7 +1004,7 @@
 </table>
 <p>Direction is command (<code>c</code>) for commands issued to the DVL and the DVL replies with direction set to response (<code>r</code>).
 The commands can be sent as a string or entered one char at a time from a terminal.</p>
-<p>The protocol can support Water Linked DVLs with different features sets.
+<p>The protocol can support Water Linked DVLs with different feature sets.
 To support any Water Linked DVL the connection procedure is to:</p>
 <ul>
 <li>Get protocol version. Verify that the major version number is 2.</li>
