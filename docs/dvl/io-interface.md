@@ -1,6 +1,6 @@
 # Overview
 
-The IO Interface provides simple means of connction to the Water Linked DVLs. It provides magnetics for the ethernet connection and utilizes the Molex Micro-Fit 3.0 power connector which is standard for Water Linked products.
+The IO Interface provides simple means of connection to the Water Linked DVLs. It provides magnetics for the ethernet connection and utilizes the Molex Micro-Fit 3.0 power connector which is standard for Water Linked products.
 
 There currently exists two revisions of the IO Interface. They are electrically identical.
 
