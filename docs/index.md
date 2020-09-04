@@ -8,6 +8,12 @@
             <h4>DVL A50</h4>
         </a>
     </div>
+	    <div class="col-xs-12 col-sm-6 col-md-4 col-l-4 col-xl-3 col-3">
+        <a href="https://waterlinked.github.io/underwater-gps/introduction/">
+            <img src="https://waterlinked.com/wp-content/uploads/2020/04/UGPS_G2_Pelicase_Top_1600_web.jpg" /><br>
+            <h4>Underwater GPS G2</h4>
+        </a>
+    </div>
     <div class="col-xs-12 col-sm-6 col-md-4 col-l-4 col-xl-3 col-3">
         <a href="https://waterlinked.github.io/explorer-kit/introduction/">
             <img src="https://waterlinked.com/wp-content/uploads/2018/02/Explorer-Kit-S1-300x300.jpg" /><br>
