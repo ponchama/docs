@@ -29,7 +29,22 @@ extra_css:
 
 nav:
     - Home: index.md
-    - Explorer Kit:
+    - Underwater GPS G2:
+        - Introduction: underwater-gps/introduction.md
+        - Warnings: underwater-gps/warnings.md
+        - Power supply: underwater-gps/power-supply.md
+        - Network settings: underwater-gps/network-settings.md
+        - Hardware: underwater-gps/hardware.md
+        - BlueROV2 integration: underwater-gps/bluerov-integration.md
+        - GUI:
+            - Position: underwater-gps/gui/position.md
+            - Receivers: underwater-gps/gui/receivers.md
+            - Settings: underwater-gps/gui/settings.md
+            - Diagnostic: underwater-gps/gui/diagnostic.md
+            - API: underwater-gps/gui/api.md
+        - Quickstart: underwater-gps/quickstart.md
+        - Trouble shooting: underwater-gps/trouble-shooting.md
+    - Underwater GPS Explorer Kit:
         - Introduction: explorer-kit/introduction.md
         - Warnings: explorer-kit/warnings.md
         - Power supply: explorer-kit/power-supply.md
@@ -61,8 +76,10 @@ nav:
         - DVL A50:
           - Introduction: dvl/dvl-a50.md
           - Details: dvl/dvl-a50-details.md
+          - BlueROV2 integration: dvl/bluerov-integration.md
         - Protocol: dvl/dvl-protocol.md
         - IO Interface: dvl/io-interface.md
+    - Software update: sw-update.md
     - Channel overview: channels.md
     - Tutorials: tutorials.md
     - Helpful Links: helpful-links.md
