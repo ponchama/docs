@@ -24,9 +24,9 @@ The [Locator-A1](../locators/locator-a1.md) and [Locator-U1](../locators/locator
 
 * [Penetrator Wrench](https://bluerobotics.com/store/cables-connectors/tools/tool-penetrator-wrench-r1/)
 
-![blurerov2_integration_kit](../img/bluerov2_integration_kit.jpg)
+![blurerov2_integration_kit](https://waterlinked.com/wp-content/uploads/2020/08/BlueROV2_IntegrationKit_Complete_1600_web.jpg)
 
-* [BlueROV2 Integration Kit](https://waterlinked.com/store/)
+* [BlueROV2 Integration Kit](https://waterlinked.com/product/bluerov2-integration-kit/)
 
 You will also need:
 
@@ -42,7 +42,7 @@ Optional:
 You will need to install the Locator-A1 on the BlueROV2 using components from the BlueROV2 Integration Kit. The Locator will use one of the spare cable penetrations in the back of the BlueROV2 and will connect to the spare green and white twisted pair in the tether.
 
 !!! Note
-	The Locator-A1 requires a mounting bracket to attach it to the BlueROV2.
+	The Locator-A1 requires a mounting bracket to attach it to the BlueROV2. You can find a 3D model of a suitable mounting bracket [here](https://waterlinked.com/wp-content/uploads/2017/06/Locator_A1_Mounting_Bracket.zip) which you can 3D print as is, or modify to your needs. Altenativly you can simply attach the Locator-A1 to the BlueROV2 using zip ties. Just make sure the Locator-A1 has free line-of-sight towards the Receivers near the surface.
  
 ### Removing a blank penetrator
 

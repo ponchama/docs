@@ -119,9 +119,12 @@ For this installation you will additionally need:
 
 * Feed the now exposed leads through the penetrator starting from the head, and continue feeding until the cable jacket is situated within the shoulder of the penetrator.
 
-![labeled-penetrator-cutaway](labeled-penetrator-cutaway.png)
+![labeled-penetrator-cutaway](../img/labeled-penetrator-cutaway.png)
 
-* With the threads of the penetrator pointing downwards and the cable pointing upwards, pour potting compound into the space between the cable and the penetrator. Fill with potting compound until it is flush with the top of the penetrator. It is a good idea to hold the penetrator in place using a clamping vice.
+* With the threads of the penetrator pointing downwards and the cable pointing upwards, pour potting compound into the space between the cable and the penetrator. Fill with potting compound until it is flush with the top of the penetrator.
+
+!!! Tip
+	Use a clamping vice to hold the penetrator in place while pouring the potting compund.
 
 * Let the potting compound harden before proceding.
 
@@ -129,5 +132,86 @@ For this installation you will additionally need:
 
 * Let the potting compound fully cure before proceding.
 
+### Removing a blank penetrator
+
+To remove a blank penetrator from your BlueROV2, you will need the following tools:
+
+* 2.5 mm hex driver
+* \#1 Phillips head screwdriver
+* Penetrator wrench
+
+To ensure your ROV is completely powered off, please remove the battery completely from the 3” enclosure and place to the side.
+
+![bluerov2-remove-battery](../img/bluerov2-remove-battery-1024x768.jpg)
+
+Remove the fairings and buoyancy blocks by removing the self-tapping screws that hold the fairings to the frame.
+
+![bluerov2-remove-fairings](../img/bluerov2-remove-fairings-1024x674.png)
+
+Remove the 4” electronics enclosure from the ROV by removing the M3x16 screws that mount the enclosure to the ROV cradle.
+
+![bluerov2-remove-electronic](../img/bluerov2-remove-electronic-1024x743.png)
+
+Remove the Vent Plug from the Vent Penetrator Bolt on the electronics enclosure. Remove the 4″ tube and forward dome assembly from the rear end cap.
+
+![bluerov2-remove-vent](../img/bluerov2-remove-vent-1024x1024.jpg)
+
+Remove the blank penetrator as pictured from the 4” End Cap with the penetrator wrench that came with the BlueROV2 kit.
+
+![bluerov2-end-cap-remove](../img/bluerov2-end-cap-remove-1024x576.jpg)
+
+### Install DVL-A50 penetrator
+
+To install DVL-A50 into the end cap, you will need the following parts and tools:
+
+* DVL-A50 with pre-installed cable penetrator
+* Penetrator Nut (Black)
+* Penetrator O-ring
+* Silicone Grease – 10g Tube
+* Isopropyl Alcohol Wipe
+* Penetrator wrench
+
+Wipe the exterior surface of the electronics enclosure end cap clean with isopropyl alcohol or isopropyl alcohol wipes, and make sure it is free of any particles in the areas where the penetrator O-ring will sit.
+
+Remove the O-ring from the bag and apply silicone grease to it.
+
+![bluerov2-grease-o-ring](../img/bluerov2-grease-o-ring-1024x683.png)
+
+Install the O-ring onto the DVL-A50 cable penetrator.
+Install the DVL-A50 cable penetrator on to the end cap in the hole you previously removed the blank penetrator from. Tighten to finger tight, then use the provided wrench to tighten it an additional ~1/16 of a turn. If you can’t loosen it with your fingers, it is tight enough.
+
+![bluerov2-end-cap-A1](../img/bluerov2-end-cap-A50-1024x576.jpg)
+
+### Reinstall IO Interface board
+
+With the DVL-A50 penetrator now through the 4" End Cap, resolder the leads of the DVL-A50 cable to the IO Interface board. 
+
+| DVL-A50 cable                                                  | IO Interface pad | Function       |
+| -------------------------------------------------------------- | :--------------- | :------------- |
+| ![4tp2p_black_lead](../img/4tp2p_black_lead.png)               | GND              | Power ground   |
+| ![4tp2p_red_lead](../img/4tp2p_red_lead.png)                   | VIN              | Power in       |
+| ![4tp2p_white-orange_lead](../img/4tp2p_white-orange_lead.png) | TD+              | Ethernet TX+   |
+| ![4tp2p_orange_lead](../img/4tp2p_orange_lead.png)             | TD-              | Ethernet TX-   |
+| ![4tp2p_white-green_lead](../img/4tp2p_white-green_lead.png)   | RD+              | Ethernet RX+   |
+| ![4tp2p_green_lead](../img/4tp2p_green_lead.png)               | RD-              | Ethernet RX-   |
+| ![4tp2p_white-brown_lead](../img/4tp2p_white-brown_lead.png)   | TX               | Serial UART TX |
+| ![4tp2p_brown_lead](../img/4tp2p_brown_lead.png)               | RX               | Serial UART RX |
+
+![io_interface_wires](../img/io_interface_wires.png)
 
 
+### Reasemble BlueROV2 electronics enclosure
+
+To reassemble your BlueROV2 Electronics Enclosure, you will need the following parts and tools:
+	
+* 4 x M3x16 screws that were placed off to the side during disassembly
+* Silicone Grease – 10g Tube
+* 2.5 mm hex driver
+
+Reinstall 4” Watertight Enclosure onto ROV with the following steps:
+
+Apply silicone grease to the two radial O-rings on the O-Ring Flange (4” Series) that is attached to the Electronics Tray then install the Watertight Enclosure (4” Series) with installed Dome End Cap to the O-Ring Flange (4” Series).
+
+Mount the Electronics Enclosure to the frame using the M3x16 screws so that the dome is on the same side as the front center panels (the center panels without the 3 large holes). Install the M3x16 screws through the clips and into the Enclosure Cradle (4” Series). It is easier to install these screws if the clips are not fully tightened until all screws are through the clips and threading into the Enclosure Cradle (4” Series). This allows clips to rotate so you can find the threaded hole in the Enclosure Cradle (4” Series) easily.
+
+![bluerov2-remove-electronic](../img/bluerov2-remove-electronic-1024x743.png)
